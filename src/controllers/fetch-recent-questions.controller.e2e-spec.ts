@@ -33,14 +33,14 @@ describe('Fetch recent questions (E2E)', () => {
           slug: 'question-01',
           content: 'Question content',
           authorId: user.id,
-          userId: user.id
+          userId: user.id,
         },
         {
           title: 'Question 02',
           slug: 'question-02',
           content: 'Question content',
           authorId: user.id,
-          userId: user.id
+          userId: user.id,
         },
       ],
     })

@@ -11,16 +11,16 @@ import { FetchRecentQuestionsController } from './controllers/fetch-recent-quest
 @Module({
   imports: [
     ConfigModule.forRoot({
-      validate: env => envSchema.parse(env),
-      isGlobal: true
+      validate: (env) => envSchema.parse(env),
+      isGlobal: true,
     }),
-    AuthModule
+    AuthModule,
   ],
   controllers: [
     CreateAccountController,
     AuthenticateController,
     CreateQuestionController,
-    FetchRecentQuestionsController
+    FetchRecentQuestionsController,
   ],
   providers: [PrismaService],
 })
